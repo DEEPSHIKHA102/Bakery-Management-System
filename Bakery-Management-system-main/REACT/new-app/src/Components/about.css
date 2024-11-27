@@ -1,0 +1,18 @@
+.about-bg {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../img/background2.jpg');
+  min-height: 450px;
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom:15px;
+  border-radius: 6px;
+  padding-top: 10px;
+	color: rgb(242, 242, 242);
+}
+
+.description {
+	color: white;
+  text-shadow: 2px 2px 4px #000000;
+}

@@ -1,0 +1,235 @@
+body {
+    background: #d4d4dc;
+    margin: 0;
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  
+  .swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+  }
+  
+  .swiper-slide img {
+    width: 500px;
+    height: 300px;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    font-style: italic;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card:hover .card-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .card .card-overlay h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card .card-overlay p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .card .card-overlay a {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .card .card-overlay a:hover {
+    background-color: #f1f1f1;
+  }
+  .product-heading {
+    color: #d54d7b; 
+    font-family: "Great Vibes", cursive; 
+    font-size: 100px; 
+    line-height: 160px; 
+    font-weight: normal; 
+    margin-bottom: 10px; 
+    margin-top: 40px; 
+    text-align: center; 
+    text-shadow: 0 1px 1px #000000;
+    
+  }
+  .hr-line {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #000, transparent);
+  }
+  
+  .slider-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .slider-heading {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .slider-description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+  }
+  
+  footer div {
+    background-color: var(--col-deepblue);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+  
+  .wave {
+    animation: wave 10s linear;
+    animation-iteration-count: infinite;
+    fill: #d54d7b;
+  }
+  .drop2 {
+    animation-delay: 3s;
+    animation-duration: 3s;
+  }
+  
+  .drop3 {
+    animation-delay: -2s;
+    animation-duration: 3.4s;
+  }
+  
+  .drop4 {
+    animation-delay: 1.7s;
+  }
+  
+  .drop5 {
+    animation-delay: 2.7s;
+    animation-duration: 3.1s;
+  }
+  
+  .drop6 {
+    animation-delay: -2.1s;
+    animation-duration: 3.2s;
+  }
+  
+  .gooeff {
+    filter: url(#goo);
+  }
+  
+  #wave2 {
+    animation-duration: 5s;
+    animation-direction: reverse;
+    opacity: 0.6;
+  }
+  
+  #wave3 {
+    animation-duration: 7s;
+    opacity: 0.3;
+  }
+  
+  @keyframes drop {
+    0% {
+      transform: translateY(15px);
+    }
+    30% {
+      transform: translateY(-10px) scale(0.4);
+    }
+    30.001% {
+      transform: translateY(15px) scale(1);
+    }
+    70% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(-10px) scale(0.4);
+    }
+  }
+  
+  @keyframes wave {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .footer-data{
+    font-size: larger;
+    text-shadow: 0 1px 1px #000000;
+  }
+  .social-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Align icons in the center horizontally */
+  }
+  
+  .social-icon-item {
+    margin-right: 10px; /* Add spacing between icons */
+  }
+  
+  .social-icon {
+    font-size: 18px; /* Adjust the size of the icons */
+  }
+  
